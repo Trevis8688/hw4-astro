@@ -1,3 +1,10 @@
 ---
-
+const { title, date, content, link } = Astro.props;
 ---
+
+<article>
+    <h2>{title}</h2>
+    <p><strong>Published on:</strong> {date}</p>
+    <p>{content}</p>
+    <a href={link}>Read more...</a>
+</article>
